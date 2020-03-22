@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".DisplayList">
 
-    <include
+    <!--<include
         android:id="@+id/include"
-        layout="@layout/content_layout" />
+        layout="@layout/content_layout" />-->
 
-    <!--<TextView
+    <TextView
         android:id="@+id/TV_List"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,6 +61,6 @@
         android:layout_marginRight="40dp"
         android:text="CREATE NEW CARD"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />-->
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

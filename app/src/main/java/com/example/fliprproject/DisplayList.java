@@ -2,6 +2,7 @@ package com.example.fliprproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,21 +17,6 @@ public class DisplayList extends AppCompatActivity implements CallBackListener{
 
     Bundle extras;
     String list_name;
-
-    ListView lv_languages;
-
-
-    CardListAdapter list_adapter;
-    String[] languages = new String[] { "SQL",
-            "JAVA",
-            "JAVA SCRIPT",
-            "C#",
-            "PYTHON",
-            "C++",
-            "PHP",
-            "IOS",
-            "ANDROID"
-    };
 
     @Override
     public void onCallBack() {
@@ -50,27 +36,22 @@ public class DisplayList extends AppCompatActivity implements CallBackListener{
         setContentView(R.layout.activity_display_list);
 
         extras = getIntent().getExtras();
-        if(extras == null)
+        if (extras == null)
             list_name = null;
         else
             list_name = (String) extras.get("List Name");
 
-        //Button add_list = findViewById(R.id.add_card);
-        //Button test_btn = findViewById(R.id.test_btn);
+        Button view_card = findViewById(R.id.test_btn);
 
-        //TextView list_title = findViewById(R.id.TV_List);
-        //list_title.setText("My List");
-
-        init();
-        lv_languages.setAdapter(list_adapter);
-
-        /*add_list.setOnClickListener(new View.OnClickListener() {
+        view_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //openListPrompt();
+                Intent intent = new Intent(DisplayList.this, DisplayCard.class);
+                startActivity(intent);
             }
-        });*/
+        });
     }
+
 
     /*public void openListPrompt()
     {
@@ -79,7 +60,7 @@ public class DisplayList extends AppCompatActivity implements CallBackListener{
         popup_dialog.show(getSupportFragmentManager(),"example");
     }*/
 
-    private void init() {
+    /*private void init() {
 
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
@@ -107,6 +88,6 @@ public class DisplayList extends AppCompatActivity implements CallBackListener{
             return true;
         }*/
 
-        return super.onOptionsItemSelected(item);
-    }
+        //return super.onOptionsItemSelected(item);
+    //}
 }

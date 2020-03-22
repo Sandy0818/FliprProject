@@ -42,7 +42,7 @@ public class DisplayBoard extends AppCompatActivity implements CallBackListener 
         else
             board_name = (String) extras.get("Board Name");
 
-        list_title.setText(board_name);
+        list_title.setText("My board");
 
         add_list.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "928545515988",
+    "firebase_url": "https://fliprproject.firebaseio.com",
+    "project_id": "fliprproject",
+    "storage_bucket": "fliprproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928545515988:android:870e78dd661fec8c810e41",
+        "android_client_info": {
+          "package_name": "com.example.fliprproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928545515988-ftc0dmeg10c7vidne5oiv60dh2fj0sds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9YV8A3V1owMVkyEoKqXnwr2GkRjzZ_pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928545515988-ftc0dmeg10c7vidne5oiv60dh2fj0sds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
